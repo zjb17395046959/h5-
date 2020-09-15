@@ -1,0 +1,31 @@
+@baseWidth:750;
+.vw(@name,@px){
+    @{name}:(@px / @baseWidth )* 100vw;
+}
+.longVw(@name,@a,@b,@c,@d){
+    @{name}:( @a / @baseWidth)* 100vw ( @b / @baseWidth)* 100vw ( @c / @baseWidth)* 100vw ( @d / @baseWidth)* 100vw 
+}
+#wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header,footer{
+        .vw(height,100);
+        .vw(line-height,100);
+        text-align: center;
+        background:#ccc;
+    }
+    .content{
+        flex: 1;
+        overflow: auto;
+        ul{
+            li{
+                .vw(font-size,30);
+            }
+        }
+    }
+    footer{
+
+    }
+}

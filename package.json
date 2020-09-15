@@ -1,0 +1,11 @@
+{
+  "name": "test-h5",
+  "version": "1.0.1",
+  "description": "这是一个h5页面的头尾固定中间上下滚动或者是头部固定，下面隐藏滚动和上拉加载",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

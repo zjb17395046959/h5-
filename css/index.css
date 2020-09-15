@@ -1,0 +1,49 @@
+.html,
+.body {
+  height: 100%;
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#wrap header {
+  height: 13.33333333vw;
+  line-height: 13.33333333vw;
+  text-align: center;
+  background: #ccc;
+}
+#wrap .content {
+  flex: 1;
+  overflow: auto;
+}
+#wrap footer {
+  height: 13.33333333vw;
+  line-height: 13.33333333vw;
+  text-align: center;
+  background: #ccc;
+}
+.html_wrap_scroll,
+.body_wrap_scroll {
+  height: 100%;
+}
+#wrap_scroll {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#wrap_scroll header {
+  height: 13.33333333vw;
+  line-height: 13.33333333vw;
+  text-align: center;
+  background: #ccc;
+}
+#wrap_scroll .content {
+  flex: 1;
+  overflow: auto;
+}
+#wrap_scroll .content ul li {
+  font-size: 5.33333333vw;
+}

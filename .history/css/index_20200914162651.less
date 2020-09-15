@@ -1,0 +1,55 @@
+@baseWidth:750;
+.vw(@name,@px){
+    @{name}:(@px / @baseWidth )* 100vw;
+}
+.longVw(@name,@a,@b,@c,@d){
+    @{name}:( @a / @baseWidth)* 100vw ( @b / @baseWidth)* 100vw ( @c / @baseWidth)* 100vw ( @d / @baseWidth)* 100vw 
+}
+.html,.body{
+    height: 100%;
+}
+#wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // 头部布局
+    header{
+        .vw(height,100);
+        .vw(line-height,100);
+        text-align: center;
+        background:#ccc;
+    }
+    // 中间内容整体大盒子布局
+    .content{
+        flex: 1;
+        // .vw(height,500);
+        overflow: auto;
+    }
+    // 尾部布局
+    footer{
+        .vw(height,100);
+        .vw(line-height,100);
+        text-align: center;
+        background:#ccc;
+    }
+}
+
+// 这是头部固定，下面超出隐藏及滚动事件布局
+.html_wrap_scroll,.body_wrap_scroll{
+    height: 100%;
+}
+#wrap_scroll{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // 头部布局
+    header{
+        .vw(height,100);
+        .vw(line-height,100);
+        text-align: center;
+        background:#ccc;
+    }
+    // 中间大盒子布局及上拉加载
+}
